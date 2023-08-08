@@ -48,4 +48,4 @@ output$benefitsTable<-renderDataTable(as.data.frame(raw$benefits))
 output$feedbackTable<-renderDataTable(as.data.frame(raw$feedback)) 
 }
 
-shinyApp(ui, server)
+shinyApp(ui, server) 
