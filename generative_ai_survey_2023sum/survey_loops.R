@@ -35,22 +35,6 @@ proptable<- function(v){
               pct=percent(prop*100, scale=0.01, accuracy=0.01))
 }
 
-proptable<- function(v){
- s<- data %>%
-    group_by({{v}}) %>%
-    summarize(num=n(),
-              prop=n()/nrow(data)*100,
-              pct=percent(prop*100, scale=0.01, accuracy=0.01))
- assign(paste0(v,"_proptable"),s)
-}
-
-#draw and format gender graphs
-gender_props<-data %>%
-  group_by(gender) %>%
-  summarize(num=n(),
-            prop=n()/nrow(data)*100,
-            pct=percent(prop*100, scale=0.01, accuracy=0.01))
-
 
 genderpie<-ggpie(gender_props,x="prop", label="pct", fill="gender",color=NULL, lab.pos="in", lab.font=c("bold","black"), lab.adjust=-2)+
   scale_fill_brewer(palette="Set1")+
