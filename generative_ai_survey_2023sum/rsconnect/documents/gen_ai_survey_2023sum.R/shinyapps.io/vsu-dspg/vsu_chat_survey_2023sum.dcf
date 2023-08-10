@@ -1,0 +1,14 @@
+name: vsu_chat_survey_2023sum
+title: vsu_chat_survey_2023sum
+username:
+account: vsu-dspg
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 9584262
+bundleId: 7552423
+url: https://vsu-dspg.shinyapps.io/vsu_chat_survey_2023sum/
+when: 1691675288.46627
+lastSyncTime: 1691675288.46628
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: gen_ai_dash.R|gen_ai_dash_prelim.R|gen_ai_survey_2023sum_singles.R|survey_loops.R
