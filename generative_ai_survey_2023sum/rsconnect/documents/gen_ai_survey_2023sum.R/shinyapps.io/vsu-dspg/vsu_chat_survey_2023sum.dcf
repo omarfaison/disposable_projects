@@ -5,10 +5,10 @@ account: vsu-dspg
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 9584262
-bundleId: 7552423
+bundleId: 7557669
 url: https://vsu-dspg.shinyapps.io/vsu_chat_survey_2023sum/
-when: 1691675288.46627
-lastSyncTime: 1691675288.46628
+when: 1691776431.37385
+lastSyncTime: 1691776431.37388
 asMultiple: FALSE
 asStatic: FALSE
-ignoredFiles: gen_ai_dash.R|gen_ai_dash_prelim.R|gen_ai_survey_2023sum_singles.R|survey_loops.R
+ignoredFiles: gen_ai_dash.R|gen_ai_dash_prelim.R|gen_ai_survey_2023sum_singles.R|survey_loops.R|wordcloud_01.R
