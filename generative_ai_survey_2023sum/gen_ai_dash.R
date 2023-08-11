@@ -43,9 +43,9 @@ output$workloadplot_all<-renderPlot(workloadplot)
 output$engagementplot_all<-renderPlot(engagementplot)
 output$equityplot_all<-renderPlot(equityplot)
 
-output$challengesTable<-renderDataTable(as.data.frame(raw$challenges)) 
-output$benefitsTable<-renderDataTable(as.data.frame(raw$benefits)) 
-output$feedbackTable<-renderDataTable(as.data.frame(raw$feedback)) 
+output$challengesTable<-renderDataTable(raw %>% select(challenges)) 
+output$benefitsTable<-renderDataTable(raw %>% select(benefits)) 
+output$feedbackTable<-renderDataTable(raw %>% select(feedback)) 
 }
 
 shinyApp(ui, server) 
